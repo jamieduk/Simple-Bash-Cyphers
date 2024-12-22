@@ -1,0 +1,129 @@
+1. Simple Substitution Cipher
+This is a monoalphabetic cipher where each letter is replaced with a unique letter. Cracking it involves frequency analysis of letters.
+
+
+2. Atbash Cipher
+Atbash is a substitution cipher where letters are mapped to their reverse counterparts (A ↔ Z, B ↔ Y, etc.). Cracking it is straightforward.
+
+
+3. XOR Cipher
+For XOR ciphers, we assume a key of one character and brute force all possible keys.
+
+
+4. Vigenère Cipher
+Vigenère uses a keyword to determine shifts. We can brute-force shorter keywords.
+
+
+5. ROT13 Shift (Ceasar Cypher)
+Base64 encoding is not encryption but is often used in obfuscation. Decoding it is simple.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+./auto-crack-rot13.sh "alza"
+
+Expected output:
+
+Decrypted Text: test
+UnShift Used: 19
+Original Shift Used: 7
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2. For AT-Bash
+
+./Atbash-Cipher-Cracker.sh "Zgyzhs"
+
+Ciphertext:
+
+Zgyzhs
+
+Expected output:
+
+Atbash
+
+
+3. For 
+
+./Simple-Substitution-Cipher-Cracker.sh "GVHG12345 GSRH RH Z GVHG"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+4. For Vigenère-Cipher-Cracker.sh
+Ciphertext with keyword "key":
+
+
+Rijvs
+Expected output:
+
+arduino
+
+Decrypted text: Hello  
+5. For XOR-Cipher-Cracker.sh
+Ciphertext (in hex):
+
+
+4c0e0f
+Use a single-byte XOR key. Expected output (with key 0x42):
+
+arduino
+
+Decrypted text: Hello  
+6. For unshift.sh
+Ciphertext:
+
+
+dahhk
+Expected operation: Reverse Caesar shift to find the plaintext apple.
+
+7. For shift.sh
+Plaintext:
+
+
+apple
+Shift 5:
+
+arduino
+
+Decrypted text: fuuqj  
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To create a substition cypher in bash for cracker to test (3 Simple-Substitution-Cipher-Cracker.sh)
+
+./Simple-Substitution-Cipher-Creator.sh "test12345 this is a test"
+
+Encrypted Text: GVHG12345 GSRH RH Z GVHG
+Substitution Key:
+Original Alphabet:  ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Custom Cipher:      ZYXWVUTSRQPONMLKJIHGFEDCBA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+./Atbash-Cipher-Creator.sh "text here"
+sdws gdqd
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
