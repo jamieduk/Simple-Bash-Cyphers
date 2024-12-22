@@ -1,6 +1,6 @@
 # Simple Bash Ciphers
 
-Simple Bash Ciphers by J\~Net 2024
+Simple Bash Ciphers by J~Net 2024
 
 [GitHub Repository](https://github.com/jamieduk/Simple-Bash-Cyphers)\
 [Discussion Forum](https://jnet.forumotion.com/t2083-bash-auto-rot13-cracker#3220)
